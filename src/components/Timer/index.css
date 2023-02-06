@@ -1,0 +1,14 @@
+.timer-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    padding-top: 300px
+}
+.timer-heading{
+    margin-bottom: 10px;
+}
+.timer-value{
+    margin-top: 10px;
+}
