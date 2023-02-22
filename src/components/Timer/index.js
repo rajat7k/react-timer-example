@@ -7,9 +7,15 @@ export default function Timer() {
   useEffect(() => {
     console.log("useEffect")
     const startTimer=setInterval(() => {
-      setCurTime(prev=>prev+1);
+      setCurTime(prev=>{
+        console.log(prev)
+       return prev+1
+      });
     }, 1000)
-    return()=> clearInterval(startTimer);
+    return()=> {
+      console.log('came unmount')
+      clearInterval(startTimer);
+    } 
   }, [])
   return (
     <div className="timer-page">
